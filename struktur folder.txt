@@ -1,44 +1,28 @@
-warren_ai/
+warren-ai-streamlit/
 │
-├── main.py                    # Entry point utama
-├── streamlit_app.py           # Aplikasi Streamlit
+├── streamlit_app.py              # Main Streamlit app
+├── main.py                       # Core application
+├── requirements.txt              # Dependencies
 │
-├── core/                      # Inti aplikasi
+├── core/
 │   ├── __init__.py
-│   ├── base_analyzer.py      # Base class untuk analisis
-│   └── config.py             # Konfigurasi global
+│   └── config.py
 │
-├── data/                      # Modul data
+├── data/
 │   ├── __init__.py
-│   ├── data_provider.py      # Interface untuk data provider
-│   ├── yahoo_finance.py      # Implementasi Yahoo Finance
-│   └── alternative_api.py    # Implementasi API alternatif
+│   ├── data_provider.py         # ✅ FIXED
+│   └── yahoo_finance.py         # ✅ FIXED
 │
-├── analysis/                  # Modul analisis
+├── models/
 │   ├── __init__.py
-│   ├── fundamental.py        # Analisis fundamental
-│   ├── technical.py          # Analisis teknikal
-│   ├── dividend.py           # Analisis dividend
-│   └── scoring.py           # Sistem scoring
+│   └── stock.py
 │
-├── portfolio/                 # Manajemen portfolio
+├── analysis/
 │   ├── __init__.py
-│   ├── portfolio_manager.py
-│   └── performance_tracker.py
+│   ├── fundamental.py
+│   ├── technical.py
+│   └── dividend.py
 │
-├── utils/                     # Utilities
-│   ├── __init__.py
-│   ├── formatter.py
-│   ├── validator.py
-│   └── logger.py
-│
-├── interfaces/                # Interface/tampilan
-│   ├── __init__.py
-│   ├── cli_interface.py      # CLI interface
-│   └── web_interface.py      # Web interface (Streamlit)
-│
-└── models/                   # Data models
+└── utils/
     ├── __init__.py
-    ├── stock.py
-    ├── analysis_result.py
-    └── recommendation.py
+    └── formatter.py
