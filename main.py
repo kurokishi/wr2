@@ -27,3 +27,4 @@ class WarrenAI:
                 'rsi_period': self.config.rsi_period,
                 'moving_averages': self.config.moving_averages,
                 'default_period': self.config.default_period
+            }
